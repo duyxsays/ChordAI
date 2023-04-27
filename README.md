@@ -3,13 +3,15 @@
 </p>
 
 # ChordAI
-> A iOS project used for a creative interaction between mobile device and music with the help of computervision
+> A iOS project used for a creative interaction between mobile device and music with the help of computervision.
 
 ## Purpose of the project
 To create an iOS application that uses computervison to recognise hand gestures. Then using the recognition to map the interaction for musical purposes.
 
 ## Tools
+### 
 ### Software
+- xCode
 
 ### Hardware
 - iPhone front camera with atleast iOS 14 (Vision framework compatability)
