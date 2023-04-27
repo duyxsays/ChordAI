@@ -4,12 +4,13 @@
 
 # ChordAI
 > A iOS project used for a creative interaction between mobile device and music with the help of computervision.
+> Developed in Swift
 
 ## Purpose of the project
 To create an iOS application that uses computervison to recognise hand gestures. Then using the recognition to map the interaction for musical purposes.
 
 ## Tools
-### 
+
 ### Software
 - xCode
 
