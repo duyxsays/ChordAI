@@ -15,5 +15,9 @@ To create an iOS application that uses computervison to recognise hand gestures.
 ### Software
 - xCode
 
+### Frameworks
+- AVMIDIPlayer
+- Vision
+
 ### Hardware
 - iPhone front camera with atleast iOS 14 (Vision framework compatability)
