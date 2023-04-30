@@ -9,38 +9,38 @@ import Foundation
 import AVFoundation
 
 final class ChordsManager: ObservableObject {
-    @Published var isPlaying: Bool = false
+    var isPlaying: Bool = false
     
-    private var goalCount = 0
-    
-    @Published var makeItRain = false
-    @Published private(set) var successBadge: Int?
-    @Published var didStart = false
+    @Published var startPlaying = false
     
     private var shouldEvaluateResult = true
     
-    func start() {
-        makeItRain = true
-    }
-    
-    func didRainStars(count: Int) {
-        goalCount = count
-    }
-    
     func countFingers(_ count: Int) {
-        if !didStart {
-            return
-        }
+        guard count != 0 else { return }
         
-        if PlayerManager.shared.isMIDIPlaying() {
-            shouldEvaluateResult = false
-            successBadge = count
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                self.successBadge = nil
-                self.makeItRain = true
-                self.shouldEvaluateResult = true
+        if !PlayerManager.shared.isMIDIPlaying() {
+            switch count {
+                case 1:
+                    playChord(chord: Chords.cMin.rawValue)
+                case 2:
+                    playChord(chord: Chords.ebMaj.rawValue)
+                case 3:
+                    playChord(chord: Chords.fMin.rawValue)
+                case 4:
+                    playChord(chord: Chords.gMin.rawValue)
+                case 5:
+                    playChord(chord: Chords.abMaj.rawValue)
+                default:
+                    return
             }
+            
+            isPlaying.toggle()
+        }
+    }
+    
+    private func playChord(chord: String) {
+        PlayerManager.shared.playMidi(chord: chord) {
+            self.isPlaying.toggle()
         }
     }
 }

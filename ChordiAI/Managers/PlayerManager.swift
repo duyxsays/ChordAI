@@ -18,9 +18,9 @@ class PlayerManager {
     private var midiPlayer: AVMIDIPlayer?
     
     /// Method for starting playback of MIDI
-    func playMidi(finished: @escaping () -> Void) {
+    func playMidi(chord: String, finished: @escaping () -> Void) {
         do {
-            guard let fileUrl = Bundle.main.url(forResource: "ebMaj", withExtension: "mid") else { return }
+            guard let fileUrl = Bundle.main.url(forResource: chord, withExtension: "mid") else { return }
             
             guard let soundBankURL  = Bundle.main.url(forResource: "Piano", withExtension: "sf2") else { return }
             

@@ -177,7 +177,7 @@ extension CameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             }
             
             fingerTips = recognizedPoints.filter {
-                $0.confidence > 0.9
+                $0.confidence > 0.90
             }.map {
                 CGPoint(x: $0.location.x, y: 1 - $0.location.y)
             }
