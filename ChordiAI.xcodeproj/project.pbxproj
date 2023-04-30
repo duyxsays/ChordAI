@@ -19,6 +19,7 @@
 		6A386E8029FEB60E0016C26A /* ebMaj3.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6A386E7629FEB60E0016C26A /* ebMaj3.mid */; };
 		6A386E8129FEB60E0016C26A /* bbMaj3.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6A386E7729FEB60E0016C26A /* bbMaj3.mid */; };
 		6A386E8329FED7BC0016C26A /* ChordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A386E8229FED7BC0016C26A /* ChordManager.swift */; };
+		6A386E8629FEEA240016C26A /* iPhone 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A386E8529FEEA240016C26A /* iPhone 13.png */; };
 		6A6176FB29F28750006D0E9E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6176FA29F28750006D0E9E /* Main.swift */; };
 		6A6176FD29F28750006D0E9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6176FC29F28750006D0E9E /* ContentView.swift */; };
 		6A6176FF29F28751006D0E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6176FE29F28751006D0E9E /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		6A386E7629FEB60E0016C26A /* ebMaj3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = ebMaj3.mid; sourceTree = "<group>"; };
 		6A386E7729FEB60E0016C26A /* bbMaj3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = bbMaj3.mid; sourceTree = "<group>"; };
 		6A386E8229FED7BC0016C26A /* ChordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordManager.swift; sourceTree = "<group>"; };
+		6A386E8529FEEA240016C26A /* iPhone 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 13.png"; sourceTree = "<group>"; };
 		6A6176F729F28750006D0E9E /* ChordiAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordiAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6176FA29F28750006D0E9E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		6A6176FC29F28750006D0E9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 				6A61771B29F2AD8B006D0E9E /* ChordViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6A386E8429FEEA190016C26A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6A386E8529FEEA240016C26A /* iPhone 13.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		6A6176EE29F28750006D0E9E = {
@@ -126,6 +136,7 @@
 		6A61771029F294F3006D0E9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A386E8429FEEA190016C26A /* Images */,
 				6A68F1CE29F9B16500036EA2 /* Sound Font */,
 				6A9E0CC729F858F2003A4D19 /* MIDI */,
 				6A61771129F29511006D0E9E /* LaunchScreen.storyboard */,
@@ -261,6 +272,7 @@
 				6A386E7F29FEB60E0016C26A /* cMin4.mid in Resources */,
 				6A386E7829FEB60E0016C26A /* fMin2.mid in Resources */,
 				6A386E7D29FEB60E0016C26A /* abMaj2.mid in Resources */,
+				6A386E8629FEEA240016C26A /* iPhone 13.png in Resources */,
 				6A6176FF29F28751006D0E9E /* Assets.xcassets in Resources */,
 				6A9E0CC629F85300003A4D19 /* Piano.sf2 in Resources */,
 				6A386E7E29FEB60E0016C26A /* abMaj3.mid in Resources */,
