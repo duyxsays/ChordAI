@@ -8,7 +8,7 @@
 _ - Developed in Swift_
 
 ## Purpose of the project
-To create an iOS application that uses computervison to recognise hand gestures. Then using the recognition to map the interaction for musical purposes.
+To create an iOS application that uses computervison in order to recognise hand gestures and the recognition to make chords on a piano. The intended use use is for people who have no knowledge of musical theory.
 
 ## Tools
 
