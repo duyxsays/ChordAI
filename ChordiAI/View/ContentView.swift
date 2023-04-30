@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var overlayPoints: [CGPoint] = []
-    @StateObject private var chordsManager = ChordsManager()
+    @StateObject private var chordVM = ChordViewModel()
     
     var body: some View {
         ZStack {
             
             CameraView {
                 overlayPoints = $0
-                if chordsManager.startPlaying {
-                    chordsManager.countFingers($0.count)
+                if chordVM.startPlaying {
+                    chordVM.determinePlayback(with: $0.count)
                 }
             }.overlay(FingersOverlay(with: overlayPoints)
                 .foregroundColor(.green))
@@ -26,6 +26,11 @@ struct ContentView: View {
             
             VStack {
                 Spacer()
+                if chordVM.startPlaying {
+                    Text("Current chord: " + (chordVM.currentChord?.rawValue ?? "N/A"))
+                } else {
+                    Text("Press start to begin playing")
+                }
                 
                 Spacer()
                 
@@ -33,10 +38,10 @@ struct ContentView: View {
                 
                 Button {
                     
-                    chordsManager.startPlaying.toggle()
+                    chordVM.startPlaying.toggle()
                     
                 } label: {
-                    Text(chordsManager.startPlaying ? "End" : "Start")
+                    Text(chordVM.startPlaying ? "End" : "Start")
                         .fontWeight(.bold)
                         .textCase(.uppercase)
                         .foregroundColor(.black)
