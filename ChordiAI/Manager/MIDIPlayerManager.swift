@@ -24,7 +24,7 @@ class MIDIPlayerManager {
      - parameter chord: String of the name of chord associated with the MIDI files.
      - parameter finished: Callback when the midi player has stopped playing.
      */
-    func playMIDI(chord: String, finished: @escaping () -> Void) {
+    func playMIDI(chord: String) {
         guard let fileUrl = Bundle.main.url(forResource: chord, withExtension: "mid") else { return }
         
         guard let soundBankURL  = Bundle.main.url(forResource: "Piano", withExtension: "sf2") else { return }
@@ -32,10 +32,7 @@ class MIDIPlayerManager {
         do {
             midiPlayer = try AVMIDIPlayer(contentsOf: fileUrl, soundBankURL: soundBankURL)
             midiPlayer?.prepareToPlay()
-            midiPlayer?.play {
-                print("stopped")
-                finished()
-            }
+            midiPlayer?.play { self.stopMIDIPlayer() }
         } catch {
             print("Failed to load MIDI file or soundbank: \(error.localizedDescription)")
         }

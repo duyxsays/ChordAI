@@ -18,6 +18,7 @@
 		6A386E7F29FEB60E0016C26A /* cMin4.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6A386E7529FEB60E0016C26A /* cMin4.mid */; };
 		6A386E8029FEB60E0016C26A /* ebMaj3.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6A386E7629FEB60E0016C26A /* ebMaj3.mid */; };
 		6A386E8129FEB60E0016C26A /* bbMaj3.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6A386E7729FEB60E0016C26A /* bbMaj3.mid */; };
+		6A386E8329FED7BC0016C26A /* ChordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A386E8229FED7BC0016C26A /* ChordManager.swift */; };
 		6A6176FB29F28750006D0E9E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6176FA29F28750006D0E9E /* Main.swift */; };
 		6A6176FD29F28750006D0E9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6176FC29F28750006D0E9E /* ContentView.swift */; };
 		6A6176FF29F28751006D0E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6176FE29F28751006D0E9E /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		6A386E7529FEB60E0016C26A /* cMin4.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = cMin4.mid; sourceTree = "<group>"; };
 		6A386E7629FEB60E0016C26A /* ebMaj3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = ebMaj3.mid; sourceTree = "<group>"; };
 		6A386E7729FEB60E0016C26A /* bbMaj3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = bbMaj3.mid; sourceTree = "<group>"; };
+		6A386E8229FED7BC0016C26A /* ChordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordManager.swift; sourceTree = "<group>"; };
 		6A6176F729F28750006D0E9E /* ChordiAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordiAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6176FA29F28750006D0E9E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		6A6176FC29F28750006D0E9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,13 +77,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A386E4B29FE773E0016C26A /* Models */ = {
+		6A386E4B29FE773E0016C26A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				6A386E4929FE77390016C26A /* Chord.swift */,
 				6A61771B29F2AD8B006D0E9E /* ChordViewModel.swift */,
 			);
-			path = Models;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6A6176EE29F28750006D0E9E = {
@@ -103,9 +105,9 @@
 		6A6176F929F28750006D0E9E /* ChordiAI */ = {
 			isa = PBXGroup;
 			children = (
-				6A386E4B29FE773E0016C26A /* Models */,
 				6AC8A32A29F6BC62001CA2A1 /* Main */,
 				6AC8A32929F6BC28001CA2A1 /* View */,
+				6A386E4B29FE773E0016C26A /* ViewModel */,
 				6AC8A32829F6BC1C001CA2A1 /* Manager */,
 				6A61771029F294F3006D0E9E /* Supporting Files */,
 				6A61770029F28751006D0E9E /* Preview Content */,
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				6AC8A32E29F6BFC9001CA2A1 /* MIDIPlayerManager.swift */,
+				6A386E8229FED7BC0016C26A /* ChordManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A386E8329FED7BC0016C26A /* ChordManager.swift in Sources */,
 				6A61770929F2897D006D0E9E /* CameraPreview.swift in Sources */,
 				6A61771A29F2ABC6006D0E9E /* FingersOverlay.swift in Sources */,
 				6A61770B29F289FC006D0E9E /* CameraViewController.swift in Sources */,

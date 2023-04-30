@@ -20,16 +20,21 @@ struct ContentView: View {
                     chordVM.determinePlayback(with: $0.count)
                 }
             }.overlay(FingersOverlay(with: overlayPoints)
-                .foregroundColor(.green))
+                .foregroundColor(Theme.Colour.colorSecondary))
                 .edgesIgnoringSafeArea(.all)
-            
             
             VStack {
                 Spacer()
                 if chordVM.startPlaying {
-                    Text("Current chord: " + (chordVM.currentChord?.rawValue ?? "N/A"))
+                    Text("Current chord:" + (chordVM.currentChord?.rawValue ?? "N/A"))
+                        .foregroundColor(Theme.Colour.colorText)
+                        .font(.custom(
+                                "Menlo",
+                                fixedSize: 20))
                 } else {
                     Text("Press start to begin playing")
+                        .foregroundColor(Theme.Colour.colorText)
+                        .font(.custom("Menlo", fixedSize: 20))
                 }
                 
                 Spacer()
@@ -44,10 +49,11 @@ struct ContentView: View {
                     Text(chordVM.startPlaying ? "End" : "Start")
                         .fontWeight(.bold)
                         .textCase(.uppercase)
-                        .foregroundColor(.black)
+                        .foregroundColor(Theme.Colour.colorText)
                         .padding()
+                        .font(.custom("Menlo", fixedSize: 16))
                         .padding(.horizontal)
-                        .background(Color.gray.opacity(0.4))
+                        .background(Theme.Colour.colorMain.opacity(0.6))
                         .clipShape(Capsule())
                 }
                 

@@ -5,8 +5,6 @@
 //  Created by Simon Andersen on 30/04/2023.
 //
 
-import Foundation
-
 enum Chord: String {
     case cMin3
     case ebMaj3
