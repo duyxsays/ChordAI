@@ -7,6 +7,10 @@
 
 _ - Developed in Swift_
 
+<p align="center">
+  <img width="200" heigh="150" src="https://github.com/ThaDuyx/ChordAI/blob/main/ChordiAI/Supporting%20Files/Images/iPhone%2013.png?raw=true"/>
+</p>
+
 ## Purpose of the project
 To create an iOS application that uses computervison in order to recognise hand gestures and the recognition to make chords on a piano. The intended use use is for people who have no knowledge of musical theory.
 
