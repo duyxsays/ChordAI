@@ -26,14 +26,14 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 if chordVM.startPlaying {
-                    Text("Current chord:" + (chordVM.currentChord?.rawValue ?? "N/A"))
-                        .foregroundColor(Theme.Colour.colorText)
+                    Text("Current chord: " + (chordVM.currentChord?.rawValue ?? "N/A"))
+                        .foregroundColor(Theme.Colour.colorMain)
                         .font(.custom(
                                 "Menlo",
                                 fixedSize: 20))
                 } else {
                     Text("Press start to begin playing")
-                        .foregroundColor(Theme.Colour.colorText)
+                        .foregroundColor(Theme.Colour.colorMain)
                         .font(.custom("Menlo", fixedSize: 20))
                 }
                 
