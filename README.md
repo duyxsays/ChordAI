@@ -19,10 +19,8 @@ You can start playing different chords in the western C Minor scale by showing y
 - C Minor chord = C - D# - G
 
 <p align="center">
-  <img src="https://github.com/ThaDuyx/ChordAI/blob/main/ChordiAI/Supporting%20Files/Images/example.gif" width="250" height="250"/>
+  <img width="150" src="https://github.com/ThaDuyx/ChordAI/blob/main/ChordiAI/Supporting%20Files/Images/example.gif" width="250" height="250"/>
 </p>
-
-![189107737-2b37c664-c014-4f3e-986a-cbe0225f4abb](https://github.com/ThaDuyx/ChordAI/blob/main/ChordiAI/Supporting%20Files/Images/example.gif)
 
 ## Tools
 
