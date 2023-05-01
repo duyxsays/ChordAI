@@ -18,7 +18,7 @@ To create an iOS application that uses computervison in order to recognise hand 
 You can start playing different chords in the western C Minor scale by showing your fingers to the camera. Each amount of fingers shown is mapped to a specifc chord. I.e. if you show 1 finger the playback will be a C Minor chord meaning pressing harmonic notes with eachother.
 - C Minor chord = C - D# - G
 
-![189107737-2b37c664-c014-4f3e-986a-cbe0225f4abb](https://user-images.githubusercontent.com/43750048/189302824-9cdc790d-7a2d-47e7-9369-57b3d3bbe15a.gif)
+![189107737-2b37c664-c014-4f3e-986a-cbe0225f4abb](https://github.com/ThaDuyx/ChordAI/blob/main/ChordiAI/Supporting%20Files/Images/example.gif)
 
 ## Tools
 
