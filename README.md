@@ -32,7 +32,8 @@ You can start playing different chords in the western C Minor scale by showing y
 - Vision
 
 ### Supporting Files
-
+- MIDI files (.mid)
+- Sound Font (.sf2)
 
 ### Hardware
 - iPhone front camera with atleast iOS 14 (Vision framework compatability)
