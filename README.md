@@ -5,7 +5,7 @@
 # ChordAI
 > A iOS project used for a creative interaction between mobile device and music with the help of computervision.
 
-_ - Developed in Swift_
+ - Developed in Swift
 
 <p align="center">
   <img width="400" heigh="350" src="https://github.com/ThaDuyx/ChordAI/blob/main/ChordiAI/Supporting%20Files/Images/iPhone%2013.png?raw=true"/>
