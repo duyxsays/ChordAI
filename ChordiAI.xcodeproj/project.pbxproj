@@ -41,6 +41,7 @@
 		6A61771229F29511006D0E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A61771129F29511006D0E9E /* LaunchScreen.storyboard */; };
 		6A61771A29F2ABC6006D0E9E /* FingersOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61771929F2ABC6006D0E9E /* FingersOverlay.swift */; };
 		6A61771C29F2AD8B006D0E9E /* ChordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61771B29F2AD8B006D0E9E /* ChordViewModel.swift */; };
+		6A6E18022A2F595200CEF209 /* chordAIApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6E18012A2F595200CEF209 /* chordAIApp.png */; };
 		6A8D1AE02A2F52490098C9DC /* example-min.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6A8D1ADF2A2F52490098C9DC /* example-min.gif */; };
 		6A9E0CC629F85300003A4D19 /* Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 6A9E0CC529F85300003A4D19 /* Piano.sf2 */; };
 		6A9E0CC929F85BE8003A4D19 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9E0CC829F85BE8003A4D19 /* Theme.swift */; };
@@ -85,6 +86,7 @@
 		6A61771729F296BE006D0E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A61771929F2ABC6006D0E9E /* FingersOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingersOverlay.swift; sourceTree = "<group>"; };
 		6A61771B29F2AD8B006D0E9E /* ChordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordViewModel.swift; sourceTree = "<group>"; };
+		6A6E18012A2F595200CEF209 /* chordAIApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chordAIApp.png; sourceTree = "<group>"; };
 		6A8D1ADF2A2F52490098C9DC /* example-min.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "example-min.gif"; sourceTree = "<group>"; };
 		6A9E0CC529F85300003A4D19 /* Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.sf2; sourceTree = "<group>"; };
 		6A9E0CC829F85BE8003A4D19 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				6A386E8529FEEA240016C26A /* iPhone 13.png */,
 				6A386E8729FEF92C0016C26A /* example.gif */,
 				6A8D1ADF2A2F52490098C9DC /* example-min.gif */,
+				6A6E18012A2F595200CEF209 /* chordAIApp.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				6A386E7C29FEB60E0016C26A /* gMin3.mid in Resources */,
 				6A386E8029FEB60E0016C26A /* ebMaj3.mid in Resources */,
 				6A386E7929FEB60E0016C26A /* cMin3.mid in Resources */,
+				6A6E18022A2F595200CEF209 /* chordAIApp.png in Resources */,
 				6A61770229F28751006D0E9E /* Preview Assets.xcassets in Resources */,
 				6A51C3AE29FFCCC5003FCDED /* PorterGrandPiano.sf2 in Resources */,
 				6A386E7F29FEB60E0016C26A /* cMin4.mid in Resources */,
